@@ -43,3 +43,7 @@ groceries = ["Bread", "Apple", "Milk", "Tea", "Sugar"]
 groceries.each do |food|
 	puts "Get me some #{food}"
 end
+
+(0..5).each do |i|
+	puts "##{i}"
+end
