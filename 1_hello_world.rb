@@ -58,96 +58,9 @@ puts data_from_file
 Load from andother file
 =end
 
-load "2.rb"
-
-# Conditional
-puts "Enter your age: "
-age = gets.to_f
-
-if (age >= 0 && age <= 11)
-	puts "You're in primary school"
-	puts "You're a kid"
-elsif (age > 11 && age <= 17)
-	puts "You're in high school"
-	puts "You're a teenager"
-else
-	puts "You're not a child or teenager anymore!"
-	puts "Grow up!"
-end
-
-unless age > 3
-	puts ""
-	
-end
-
-# unless
-x = 1
-unless x > 5
-	puts "x is less than 5"
-else
-	puts "x is greater than 5"
-end
-
-puts "x is greater than 0" if x > 0
-
-#case
-print "Enter greeting: " 
-greeting = gets.chomp
-
-case greeting
-when "French", "french"
-	puts "Bonjour"
-	exit
-when "Spanish", "spanish"
-	puts "Hola"
-	exit
-else
-	puts "Hello"
-end
-
-#Loop
-#do
-x = 0
-puts 'do loop'
-loop do
-	x += 1 
-	next unless (x % 2) == 0
-	puts x
-
-	break if x > 10 
-end
+load "another_file.rb"
 
 
-#while
-puts 'while loop'
-y = 1
-while y <= 10
-	y += 1
-	next unless (y % 2) == 0
-	puts y
-end
 
 
-#until
-puts "until loop"
-y = 1
-until y >= 10
-	y += 1
-	next unless (y % 2) == 0
-	puts y 
-end
-
-#forin
-puts "forin loop"
-numbers = [1, 2, 3, 4, 5 , 6, 7]
-for number in numbers
-	next unless (number % 2 == 0)
-	print "#{number}, "
-end
-
-#each
-groceries = ["Bread", "Apple", "Milk", "Tea", "Sugar"]
-groceries.each do |food|
-	puts "Get me some #{food}"
-end
 
