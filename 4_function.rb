@@ -8,7 +8,7 @@ puts  add_numbers(5, 10)
 x = 1
 
 def change_x(x)
-	x = 1
+	x = 10
 end
 
 change_x(x)
